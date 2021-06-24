@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(0, 255, 3, 69), stop:0.375 rgba(0, 255, 33, 69), stop:0.423533 rgba(0, 255, 33, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(71, 255, 145, 130), stop:0.518717 rgba(71, 255, 123, 130), stop:0.55 rgba(105, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(85, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+background-image: url(:/new/prefix1/oMg3W5sSlAkP22QHaEo.jpg);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>音频路径(可拖拽):</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="line_audioPath">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>打开</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/new/prefix1/3643772-archive-archives-document-folder-open_113445.png</normaloff>:/new/prefix1/3643772-archive-archives-document-folder-open_113445.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="image.qrc">:/new/prefix1/music5.jpg</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_duration">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>00:00:00/00:00:00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>播放时长:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSlider" name="slider">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="singleStep">
+        <number>0</number>
+       </property>
+       <property name="pageStep">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>播放进度(可调):</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_start">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>启动播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_stop">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>停止播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_back">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>快退</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>快进</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_pause">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>暂停播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_resume">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+				font-family:&quot;Microsoft Yahei&quot;;  				
+        border: none;
+border-radius:5px;          
+				color: rgb(255,255,255);
+				background: rgb(56,167,222);  
+				font-size: 19px;				/*14榜*/
+}
+ 
+QPushButton:hover {									 
+        
+        padding-bottom: 0px;
+        background: rgb(66,177,232);  
+      
+}
+QPushButton:pressed {		
+        background: rgb(56,167,222);  
+} </string>
+       </property>
+       <property name="text">
+        <string>恢复播放</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
